@@ -3,7 +3,11 @@
 
 <div class="absolute-parent">
 <div class="content">
-  <%= form_for(resource, as: resource_name, class: 'form-container' , url: registration_path(resource_name)) do |f| %>
+  <div class="heading">
+    <p><i>Scissors, Calculator, and a Beige Coat</i></p>
+    <p><b>Coming Soon</b></p>
+  </div>
+  <%= form_for(resource, as: resource_name, class: ' form-container' , url: registration_path(resource_name)) do |f| %>
     <div id="form">
 
 
@@ -27,10 +31,10 @@
 
       <div class="podium">
         <div class="actions">
-          <%= f.submit "Enter" , class: 'submit' %>
+          <%= f.submit "Enter" , class: 'hide hsubmit' %>
         </div>
         <div id="username" class="field">
-          <%= f.text_field :username, autofocus: true, autocomplete: "Seat Number", placeholder: "Your Seat Number" %>
+          <%= f.text_field :username, autofocus: true, autocomplete: "Seat Number", placeholder: "Your Seat Number", class: 'hide'%>
         </div>
 
       </div>

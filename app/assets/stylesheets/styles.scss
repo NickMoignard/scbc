@@ -13,9 +13,14 @@ input#user_username, input.submit {
 .hide {
     display:none;
 }
-#form {
-    margin: 0 30vw;
+#form, .heading {
     margin-top: 40vh;
+    width:100%;
+}
+.heading p {
+    width:100%;
+    text-align:center;
+    font-size: 26px;
 }
 ::placeholder {
     text-transform: initial;
