@@ -1,0 +1,62 @@
+input#user_username, input.submit {
+    font-family: 'crimson-text', 'serif';
+    border:none;
+    border-bottom: 1px solid black;
+    font-size: 12pt;
+    height: 25px;
+    -webkit-transition: color 0.5s, font-weight 1s;
+    -moz-transition: color 0.5s, font-weight 1s;
+     -o-transition: color 0.5s, font-weight 1s;
+        transition: color 0.5s, font-weight 1s;
+}
+
+.hide {
+    display:none;
+}
+#form {
+    margin: 0 30vw;
+    margin-top: 40vh;
+}
+::placeholder {
+    text-transform: initial;
+}
+
+input#user_username {
+    float: left;
+    width: 20vw;
+
+    font-size: 12pt;
+    color: darkblue;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+
+input:focus {
+    border:none;
+    border-bottom: 1px solid darkblue;
+    outline: none;
+}
+input.submit {
+    float:left;
+    padding-right: 1em;
+}
+input.submit:hover {
+    color: darkblue;
+    font-weight: bold;
+}
+div.podium {
+    display: block;
+    height:35px;
+}
+
+
+div.absolute-parent{
+
+    width:100%;
+}
+div.content {
+
+    margin: auto auto;
+    width:100%;
+}

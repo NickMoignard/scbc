@@ -1,0 +1,40 @@
+
+
+
+<div class="absolute-parent">
+<div class="content">
+  <%= form_for(resource, as: resource_name, class: 'form-container' , url: registration_path(resource_name)) do |f| %>
+    <div id="form">
+
+
+      <div class="hide field">
+        <%= f.label :email%><br/>
+        <%= f.email_field :email  %>
+      </div>
+
+      <div class="hide field">
+        <%= f.label :password %>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "new-password" %>
+      </div>
+
+      <div class="hide field">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+      </div>
+
+      <div class="podium">
+        <div class="actions">
+          <%= f.submit "Enter" , class: 'submit' %>
+        </div>
+        <div id="username" class="field">
+          <%= f.text_field :username, autofocus: true, autocomplete: "Seat Number", placeholder: "Your Seat Number" %>
+        </div>
+
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>
